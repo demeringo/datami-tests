@@ -1,3 +1,4 @@
 name,url,status,languages
-Scaphandre,https://github.com/hubblo-org/scaphandre,ready,rust|docker|other tek
+Scaphandre,,ready,rust|docker|other tek
 Boaviztapi,https://github.com/Boavizta/,ready,python
+newproject in Rust,null,unknown,rust

@@ -1,3 +1,5 @@
 name,url,status,languages,comment,review
-Scaphandre,https://github.com/hubblo-org/scaphandre,started,rust|docker|other tek,,"a review"
+Scaphandre,https://github.com/hubblo-org/scaphandre,started,rust|docker|other tek,adding a multi // line //comment with separators,a review
 Boaviztapi,https://github.com/Boavizta/,ready,python|docker,a simple comment,another review
+line 2
+line3

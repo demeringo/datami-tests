@@ -5,7 +5,7 @@ Testing Datami widget to edit CSV files [https://datami.multi.coop/](https://dat
 
 - [datami-tests](#datami-tests)
   - [Purpose](#purpose)
-  - [Content](#content)
+  - [Content of the repository](#content-of-the-repository)
   - [Validating the CSV file](#validating-the-csv-file)
     - [Define the model used for validation](#define-the-model-used-for-validation)
     - [Validating a data file locally (CLI)](#validating-a-data-file-locally-cli)
@@ -23,19 +23,16 @@ Demonstrate and document how we can use Datami and other components to:
 - constraint the display of fields in the Datami widget
 - investigate how we can use github actions to ensure that the csv file structure and or content is valid according to a model.
 
+
 The approach of Datami component is:
 
 1. to rely on Github to store the CSV file
 2. offer a html widget to visualize or edit content of the file for users who may not want to use Github directly
 3. automate the push of modifications to the data done via the widget as Github pull requests
 
-![datami component](datami-components.excalidraw.png)
+![usage flow](usage-flow.excalidraw.png)
 
-> [!WARNING]
-> The data validation and the data edition (widget) are configured using different set of files or data models.
-> These data model use different syntax but have to be kept in sync manually !
-
-## Content
+## Content of the repository
 
 - Data and data validation:
   - examples/csv/data: data files and related resources files to validate in CI
@@ -49,6 +46,12 @@ The approach of Datami component is:
   - example/csv/widget: widget and widget configuration examples
     - configuration file for the widget: [project-list.fields-custom-properties.json](https://github.com/demeringo/datami-tests/blob/main/examples/csv/widget/project-list.fields-custom-properties.json)
     - configured widget:[project-list-widget.html](https://github.com/demeringo/datami-tests/blob/main/examples/csv/widget/project-list-widget.html)
+
+![datami component](datami-components.excalidraw.png)
+
+> [!WARNING]
+> The data validation and the data edition (widget) are configured using different set of files or data models.
+> These data model use different syntax but have to be kept in sync manually !
 
 ## Validating the CSV file
 

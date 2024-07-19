@@ -37,7 +37,7 @@ schema:
       # /!\ we have to better way to express it than to replicate the pattern
       # e.g. : ^(rust|python|docker|other\ tek)?(\+(rust|python|docker|other\ tek))*$
       constraints:
-        pattern: ^(rust|python|docker|other\ tek)?(\+(rust|python|docker|other\ tek))*$
+        pattern: ^(rust|python|docker|other\ tek|esoteric\ language)?(\+(rust|python|docker|other\ tek|esoteric\ language))*$
     - name: comment
       type: string
     - name: review

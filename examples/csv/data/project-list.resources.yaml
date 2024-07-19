@@ -52,6 +52,17 @@ schema:
       # - Open-Source (Apache 2.0) => escaped as 'Open-Source\ \(Apache\ 2.0\)'
       # - Closed Source / Commercial => escaped as 'Closed\ Source\ /\ Commercial'
       #
-      # /!\ This patterns allows an empty value
+      # /!\ This patterns allows an empty value or any number of values (0..n)
       constraints:
         pattern: ^(Information\ System\ \|\ Global\ Inventory|Request\ \(http\)|CPU - RAM - I/O Capacity|Open-Source\ \(Apache\ 2.0\)|Closed\ Source\ /\ Commercial)?(\+(Information\ System\ \|\ Global\ Inventory|Request\ \(http\)|CPU - RAM - I/O Capacity|Open-Source\ \(Apache\ 2.0\)|Closed\ Source\ /\ Commercial))*$
+      # This field to test how to express constraints on single tag that contain the pipe char
+    - name: single_value_with_pipe
+      type: string
+       # Allowed values
+      # - A|B => escaped as A\|B
+      # - A|C and D => escaped as A\|C\ and \ D
+      # - Y|Z => escaped as Y\|Z
+      #
+      # /!\ This patterns allows either an empty value or a single value (0..1)
+      constraints:
+        pattern: ^(A\|B|A\|C\ and \ D|Y\|Z)?$

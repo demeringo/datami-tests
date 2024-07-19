@@ -33,6 +33,17 @@
           "esoteric language"
         ]
       }
+    },
+    {
+      "name": "single_value_with_pipe",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "A|B",
+          "A|C and D",
+          "Y|Z"
+        ]
+      }
     }
   ]
 }

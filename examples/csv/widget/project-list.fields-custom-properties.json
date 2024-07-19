@@ -37,6 +37,10 @@
       "name": "complex_tags_values",
       "subtype": "tags",
       "tagSeparator": "+"
+    },
+    {
+      "name": "single_value_with_pipe",
+      "subtype": "tag"
     }
   ]
 }

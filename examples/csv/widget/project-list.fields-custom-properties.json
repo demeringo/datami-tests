@@ -12,12 +12,14 @@
     },
     {
       "name": "status",
-      "subtype": "tag"
+      "subtype": "tag",
+      "allowNew": false
     },
     {
       "name": "languages",
       "subtype": "tags",
-      "tagSeparator": "+"
+      "tagSeparator": "+",
+      "allowNew": false
     },
     {
       "name": "comment",
@@ -36,12 +38,14 @@
     {
       "name": "complex_tags_values",
       "subtype": "tags",
-      "tagSeparator": "+"
+      "tagSeparator": "+",
+      "allowNew": false
     },
     {
       "name": "single_value_with_pipe",
       "subtype": "tag",
-      "allowNew": false
+      "allowNew": false,
+      "bgColor" : "#F0BE86"
     }
   ]
 }

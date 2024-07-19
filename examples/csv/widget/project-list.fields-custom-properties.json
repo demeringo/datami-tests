@@ -40,7 +40,8 @@
     },
     {
       "name": "single_value_with_pipe",
-      "subtype": "tag"
+      "subtype": "tag",
+      "allowNew": false
     }
   ]
 }
